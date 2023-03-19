@@ -14,7 +14,7 @@ class Pokupki(db.Model):
     oxygen = db.Column(db.Integer)
     fuel = db.Column(db.Integer)
     money = db.Column(db.Integer)
-    energy_distribution = db.Column(db.Integer)
+    energy_distribution = db.Column(db.Float)
 
     def __init__(self, oxygen, fuel, money, energy_distribution):
         self.oxygen = oxygen
